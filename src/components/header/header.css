@@ -29,6 +29,11 @@ header {
     bottom: 3rem;
 }
 
+.header_socials > a {
+    height: 3rem;
+    width: 3rem;
+}
+
 .header_socials::after {
     content: '';
     width: 1px;
@@ -50,7 +55,16 @@ header {
     margin-top: 4rem;
     border-radius: 12rem 12rem 3rem 3rem;
     overflow: hidden;
-    padding: 3rem 0rem 0rem 0rem;
+    padding: 1.5rem 0rem 0rem 0rem;
 
 }
 
+/* SCROLL DOWN>>>>>>>>>>>>>>>>>> */
+#scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
