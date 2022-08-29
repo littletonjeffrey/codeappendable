@@ -1,3 +1,6 @@
+/* font imported from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +12,115 @@
     /* remove underline on hyperlinks */
     text-decoration: none;
 }
-
+/* custom properties */
 :root {
     --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
     --color-primary: #4db5ff;
     --color-primary-variant: rgba(77, 181 , 255, 0.4);
     --color-white: #fff;
-    --coloer-light: rgba(255, 255, 255, 0.6);
+    --color-light: rgba(255, 255, 255, 0.6);
+    
+    /* smooth out transition effects */
+    --transition: 400ms ease;
+    
+    /* resize general container */
+    /* for large screen */
+    --container-width-lg: 75%;
+    /* for medium screen */
+    --container-width-md: 86%;
+    /* for small screen */
+    --container-width-ms: 90%;
+}
+
+html {
+    /* allows for smooth scrolling between sections */
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    /* eliminates scrollbar */
+    display: none;
+}
+
+body {
+    /* assigns font to entire body */
+    font-family: 'Nunito Sans', sans-serif;
+    background: var(--color-bg);
+    color: var(--color-white);
+    line-height: 1.7;
+    background-image: url('../src/assets/light-honeycomb.png')
+}
+
+/* =============GENERAL STYLES =============*/
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+/* setting general margin for each section */
+section {
+    margin-top: 8rem;
+}
+/* headers and sub-headers for each section */
+section > h2, section > h5 {
+    text-align: center;
+    color: var(--color-light)
+}
+
+section > h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light {
+    color: var(--color-light);
+}
+
+a {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-white);
+}
+
+.btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    }
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
