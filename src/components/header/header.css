@@ -1,0 +1,56 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* CTA >>>>>>>>>>>>>>>>>> */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* HEADER SOCIALS >>>>>>>>>>>>>>>>>> */
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header_socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* HEADER IMAGE>>>>>>>>>>>>>>>>>> */
+.me {
+    /* creates gradient background on image */
+    background: linear-gradient(var(--color-primary), transparent);
+    /* image size */
+    width: 22rem;
+    height: 30rem;
+    /* center image start */
+    position: absolute;
+    left: calc(50% - 11rem);
+    /* center image end */
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 3rem 3rem;
+    overflow: hidden;
+    padding: 3rem 0rem 0rem 0rem;
+
+}
+

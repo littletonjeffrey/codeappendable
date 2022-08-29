@@ -4,7 +4,7 @@ import './header.css'
 //button components for resume
 import CTA from './CTA'
 //image for CTA
-import headShot from '../../assets/headshot.png'
+import headShot from '../../assets/headshot2.png'
 //social media header component
 import HeaderSocials from './HeaderSocials'
 
