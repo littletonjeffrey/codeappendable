@@ -1,6 +1,6 @@
 import React from 'react'
 //connect individual style sheet
-import './experience.css'
+import './services.css'
 
 const services = () => {
   return (

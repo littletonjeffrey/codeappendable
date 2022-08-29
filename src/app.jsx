@@ -1,4 +1,4 @@
-import React from 'react'
+
 //import various components
 import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
@@ -11,9 +11,11 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 
-const app = () => {
+import React from 'react'
+
+const App = () => {
   return (
-    <>
+   <>
       <Header />
       <Nav />
       <About />
@@ -28,4 +30,4 @@ const app = () => {
   )
 }
 
-export default app
+export default App
