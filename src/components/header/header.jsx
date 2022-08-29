@@ -1,6 +1,12 @@
 import React from 'react'
 //connect individual style sheet
+import './header.css'
+//button components for resume
 import CTA from './CTA'
+//image for CTA
+import headShot from '../../assets/headshot.png'
+//social media header component
+import HeaderSocials from './HeaderSocials'
 
 const header = () => {
   return (
@@ -10,6 +16,13 @@ const header = () => {
         <h1>Jeffrey Littleton</h1>
         <h5 className="text-light">Fullstack Developer</h5>
         <CTA />
+        <HeaderSocials />
+
+        <div className="me">
+          <img src= {headShot} alt="head shot of Jeffrey" />
+        </div>
+
+        <a href='#contact' className='scroll_down'>Scroll Down</a>
       </div>
     </header>
   )
