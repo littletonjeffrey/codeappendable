@@ -72,6 +72,7 @@ h1 {
 /* setting general margin for each section */
 section {
     margin-top: 8rem;
+    height: 100vh;
 }
 /* headers and sub-headers for each section */
 section > h2, section > h5 {

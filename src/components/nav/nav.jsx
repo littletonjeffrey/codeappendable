@@ -5,7 +5,7 @@ import './nav.css'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {RiSuitcaseLine} from 'react-icons/ri'
-import {HiOutlineDesktopComputer} from 'react-icons/hi'
+import {FaLaptopCode} from 'react-icons/fa'
 import {FiMessageSquare} from 'react-icons/fi'
 
 const nav = () => {
@@ -14,7 +14,7 @@ const nav = () => {
       <a href='#'><AiOutlineHome /></a>
       <a href='#about'><AiOutlineUser /></a>
       <a href='#experience'><RiSuitcaseLine /></a>
-      <a href='#services'><HiOutlineDesktopComputer /></a>
+      <a href='#services'><FaLaptopCode /></a>
       <a href='#contact'><FiMessageSquare /></a>
     </nav>
   )
