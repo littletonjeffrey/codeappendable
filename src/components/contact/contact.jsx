@@ -4,8 +4,23 @@ import './contact.css'
 //icons for contacting
 import { MdOutlineEmail } from 'react-icons/md'
 import { RiMessengerLine } from 'react-icons/ri'
+//emailjs for form submit
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
 
 const contact = () => {
+  const form = useRef();
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_o0ram4u', 'service_o0ram4u', form.current, 'FbCnGjtuVGHjK3x6x')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <section id='contact'>
      <h5>Get In Touch</h5>
@@ -33,7 +48,7 @@ const contact = () => {
          </article>
        </div>
        {/* END OF CONTACT OPTIONS */}
-        <form action="">
+        <form ref = {form} onSubmit={sendEmail} >
           <input type="text" name="name" placeholder='Your Full Name' required />
           <input type="email" name="email" placeholder='Your Email' required/>
           <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
