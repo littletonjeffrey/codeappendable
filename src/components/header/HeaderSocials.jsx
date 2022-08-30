@@ -1,4 +1,5 @@
 import React from 'react'
+//icons for links
 import { IconContext } from 'react-icons'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'

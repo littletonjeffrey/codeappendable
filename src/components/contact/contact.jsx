@@ -6,21 +6,19 @@ import { MdOutlineEmail } from 'react-icons/md'
 import { RiMessengerLine } from 'react-icons/ri'
 //emailjs for form submit
 import { useRef } from 'react';
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
 
-const contact = () => {
+const Contact = () => {
   const form = useRef();
   
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_o0ram4u', 'service_o0ram4u', form.current, 'FbCnGjtuVGHjK3x6x')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    emailjs.sendEmail('service_o0ram4u', 'template_gr2e7q', form.current, 'FbCnGjtuVGHjK3x6x')
+      
+      e.target.reset();
   };
+
   return (
     <section id='contact'>
      <h5>Get In Touch</h5>
@@ -52,11 +50,11 @@ const contact = () => {
           <input type="text" name="name" placeholder='Your Full Name' required />
           <input type="email" name="email" placeholder='Your Email' required/>
           <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <button type='submit' value='send' className='btn btn-primary'>Send Message</button>
         </form>
      </div>
     </section>
   )
 }
 
-export default contact
+export default Contact
