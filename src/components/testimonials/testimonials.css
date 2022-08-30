@@ -18,3 +18,30 @@
     border-radius: 2rem;
     user-select: none;
 }
+
+.review {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
+/* ================= MEDIA QUERIES =============== */
+
+/* MEDIUM SCREENS */
+@media screen and (max-width: 1024px) {
+ .container.testimonials_container {
+     width:60%;
+ }
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width: 600px) {
+  .container.testimonials_container {
+      width: var(--container-width-sm);
+}
+.review {
+    width: var(--container-width-sm);
+}
+}

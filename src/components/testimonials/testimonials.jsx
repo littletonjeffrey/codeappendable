@@ -3,7 +3,7 @@ import React from 'react'
 import './testimonials.css'
 //avatar images
 import JR from '../../assets/jaden.png'
-import WP from '../../assets/william.png'
+import WP from '../../assets/william.jpg'
 
 const testimonials = () => {
   return (
