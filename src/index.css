@@ -48,7 +48,7 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url('../src/assets/light-honeycomb.png')
+    background-image: url('../src/assets/skin-side-up.png')
 }
 
 /* =============GENERAL STYLES =============*/
