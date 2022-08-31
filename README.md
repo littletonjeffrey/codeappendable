@@ -161,8 +161,17 @@ For answers to common questions about this code of conduct, see the FAQ at
 
   </details><br>
 
+  ## Acknowledgements
+  Several resources were used in the creation of this project, here are a few key ones:
+  - https://www.w3schools.com/howto/howto_css_flip_image.asp
+  - https://usehooks.com/
+  - https://www.transparenttextures.com/
+  - https://www.youtube.com/watch?v=G-Cr00UYokU
+  - https://www.quackit.com/css/color/tools/
+  
   ## Questions
   Shoot me an [Email](littletonjeffrey@gmail.com)<br>
   Check out my [Github](https://www.github.com/littletonjeffrey)!
+  
   ## License
   [MIT](https://opensource.org/licenses/MIT)
