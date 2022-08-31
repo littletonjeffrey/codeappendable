@@ -21,7 +21,7 @@ Node, NPM, React, React Icons, Email-js, Swiper
 Upon installation of this app and its npm dependencies, the client will be able to easily peruse through the clearly labeled/organized componenets and customize this portfolio for their own needs/design
 
 ## Demo
-See it in action on [https://codeappendable.com](https:/codeappendable.com/)!
+See it in action on [https://codeappendable.com](https://codeappendable.com/)!
 ## Contributing
 <details> 
 <summary>Contributor Covenant</summary>
